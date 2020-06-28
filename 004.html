@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>
+            jawaban 004.js
+        </title>
+    </head>
+    <body>
+        <script>
+            function reverse(param){
+                var x = param.length, y = '';
+                while(x > 0){
+                    y += param[x - 1];
+                    x--;
+                }
+                return y;
+            }
+            var kata = prompt("masukan kalimat :");
+            // var word = "kasur itu hanyut";
+            if(kata === reverse(kata)){
+                document.write("kalimat `"+kata+"` termasuk kata Palindrome.");
+            }
+            else{
+                document.write("kalimat `"+kata+"` bukan termasuk kata Palindrome.");
+            }
+        </script>
+    </body>
+
+</html>
+
+
