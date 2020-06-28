@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>
+            jawaban 006.js
+        </title>
+    </head>
+    <body>
+        <script>
+            function rekursifLooping(nilai){
+                if( nilai === 8){
+                    return;
+                }
+                document.write(`<br>${nilai}<br>`);
+                rekursifLooping(nilai+1);
+            }
+
+            rekursifLooping(1);
+        </script>
+    </body>
+</html>
