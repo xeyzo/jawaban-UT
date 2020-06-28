@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>jawaban 003.js</title>
+</head>
+<body>
+    <script>
+        var angka = new Array(3,6,7,8,2,5,90,80,90,67,50,98,99,100,46,54,);
+        var hasilMax = Math.max.apply(null, angka);
+        var hasilMin = Math.min.apply(null, angka);
+
+        var total = 0;
+        var rataRata = angka.length;
+        for(var i = 0; i<angka.length; i++){
+        total +=angka[i]
+        }
+        var rata = (total/rataRata);
+
+        document.write("Nilai :"+ angka+ "<br>");
+        document.write("Nilai max :"+ hasilMax+ "<br>");
+        document.write("Nilai min :"+ hasilMin+ "<br>");
+        document.write("Nilai rata - rata :"+ rata+ "<br>");
+    </script>
+</body>
+</html>
